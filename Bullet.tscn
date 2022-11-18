@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 5.99815, 2.61722 )
+
+[node name="Bullet" type="RigidBody2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+scale = Vector2( 1.87705, 1.00908 )
+offset = Vector2( -13.5, -7 )
+polygon = PoolVector2Array( 5, 4, 5, 10, 22, 10, 22, 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.0245826, -0.125875 )
+scale = Vector2( 2.81488, 1.33821 )
+shape = SubResource( 1 )
